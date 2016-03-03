@@ -9,7 +9,7 @@ myApp.config(['$routeProvider', function($routeProvider) {
       controller: 'postCreationController'
     })
     .when('/postReview', {
-      templateUrl: '/views/templates/tyrion.html',
+      templateUrl: '/views/templates/postReview.html',
       controller: 'postReviewController'
     })
     .otherwise({

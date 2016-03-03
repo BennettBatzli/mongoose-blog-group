@@ -1,18 +1,15 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
-var mongoose = require ('mongoose');
-var Schema = mongoose.Schema;
+
+
+var dataRoute = require('./routes/data');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 
-
-
-
-
-
+app.use('/data', dataRoute);
 
 
 app.use(express.static('public'));

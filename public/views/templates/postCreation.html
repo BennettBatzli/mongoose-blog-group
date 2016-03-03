@@ -6,8 +6,9 @@
     <label for="date">Date</label>
     <input type="date" ng-model="date" id="date" />
     <label for="blogText">Blog Text</label>
-    <input type="text" ng-model="blogText" id="blogText" />
-    <button id="save-button">Save</button>
+    <textarea ng-model="blogText" id="blogText" rows="3"></textarea>
+
+    <button id="save-button" ng-click="submitPost()">Save</button>
 
 
 
